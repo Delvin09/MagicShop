@@ -29,5 +29,10 @@ namespace MagicShop.API.Repositories
                 .AsNoTracking()
                 .SingleOrDefaultAsync(acc => acc.Login == login);
         }
+
+        public Task<List<UserAccount>> GetAccounts(CancellationToken cancellationToken)
+        {
+            return shopContext.UserAccounts.AsNoTracking().ToListAsync(cancellationToken);
+        }
     }
 }

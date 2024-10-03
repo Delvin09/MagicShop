@@ -7,5 +7,7 @@ namespace MagicShop.API.Interfaces
         Task<UserAccount> AddAccount(UserAccount account, CancellationToken cancellationToken = default);
 
         Task<UserAccount?> GetAccount(string login, CancellationToken cancellationToken = default);
+
+        Task<List<UserAccount>> GetAccounts(CancellationToken cancellationToken);
     }
 }

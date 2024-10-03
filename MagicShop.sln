@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicShop.API", "MagicShop.API\MagicShop.API.csproj", "{487927E1-AA43-4025-9595-84E570EBA17C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagicShop.API", "MagicShop.API\MagicShop.API.csproj", "{487927E1-AA43-4025-9595-84E570EBA17C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicShop.Entity", "MagicShop.Entity\MagicShop.Entity.csproj", "{6D09A263-CEDC-4999-91A6-BDCBDBF3AB64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagicShop.Entity", "MagicShop.Entity\MagicShop.Entity.csproj", "{6D09A263-CEDC-4999-91A6-BDCBDBF3AB64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicShop.MVC", "MagicShop.MVC\MagicShop.MVC.csproj", "{B67CC436-2AEA-4A9C-B1AE-89651D3A26E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6D09A263-CEDC-4999-91A6-BDCBDBF3AB64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D09A263-CEDC-4999-91A6-BDCBDBF3AB64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D09A263-CEDC-4999-91A6-BDCBDBF3AB64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B67CC436-2AEA-4A9C-B1AE-89651D3A26E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B67CC436-2AEA-4A9C-B1AE-89651D3A26E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B67CC436-2AEA-4A9C-B1AE-89651D3A26E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B67CC436-2AEA-4A9C-B1AE-89651D3A26E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

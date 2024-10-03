@@ -46,5 +46,19 @@ namespace MagicShop.API.Controllers
                 return NotFound();
             }
         }
+
+        [HttpGet("users")]
+        public async Task<ActionResult> GetUsers(CancellationToken cancellationToken)
+        {
+            try
+            {
+                var accounts = await _accountService.GetUsers(cancellationToken);
+                return Ok(accounts.Select(acc => new AccountDto(acc.Id, acc.Login, acc.Role)));
+            }
+            catch
+            {
+                return NotFound();
+            }
+        }
     }
 }

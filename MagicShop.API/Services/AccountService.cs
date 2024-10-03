@@ -1,6 +1,7 @@
 ﻿using MagicShop.API.Dtos;
 using MagicShop.API.Interfaces;
 using MagicShop.API.Repositories;
+using MagicShop.Entity.Models;
 
 namespace MagicShop.API.Services
 {
@@ -53,6 +54,11 @@ namespace MagicShop.API.Services
             }
 
             return tokenService.GetToken(account);
+        }
+
+        public Task<List<UserAccount>> GetUsers(CancellationToken cancellationToken)
+        {
+            return accountRepository.GetAccounts(cancellationToken);
         }
     }
 }

@@ -34,7 +34,6 @@ namespace MagicShop.Entity
                     .IsRequired();
 
             modelBuilder.Entity<AccountModel>()
-                //.Property(u => u.Password).IsRequired();
                 .Property(u => u.PasswordHash)
                     .IsRequired();
 

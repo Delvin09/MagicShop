@@ -41,7 +41,8 @@ namespace MagicShop.Models
         public string Login { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public RoleType Role { get; set; }
-        public string Password { get; set; } = string.Empty;
+        public byte[] PasswordHash { get; set; }
+        public byte[] PasswordSalt { get; set; }
     }
 
     public class CustomerAccountModel : AccountModel, ICustomerModel
